@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Питание</title>
+</head>
+<body>
+    
+    <h1>Рассчитайте своё питание</h1>
+    <form action="/result" method="post">
+        <label>Вес (кг):</label>
+        <input type="number" name="weight" required><br>
+        <label>Рост (см):</label>
+        <input type="number" name="height" required><br>
+        <label>Возраст:</label>
+        <input type="number" name="age" required><br>
+        <label>Пол:</label>
+        <select name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select><br>
+        <label>Уровень активности:</label>
+        <select name="activity_level">
+            <option value="sedentary">Сидячий</option>
+            <option value="lightly_active">Легкая активность</option>
+            <option value="moderately_active">Средняя активность</option>
+            <option value="very_active">Высокая активность</option>
+            <option value="extra_active">Экстремальная активность</option>
+        </select><br>
+        <button type="submit">Рассчитать</button>
+
+    </form>
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
